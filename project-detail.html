@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Grind — Case Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--
+  This is a template for ONE project's case study, not a separate page per project.
+  To add detail pages for your other projects, duplicate this file (e.g. project-katherine-johnson.html),
+  swap the content below, and point that project's "Case study" link at the new file.
+-->
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo">aliyu<span class="accent-dot">.</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </label>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="skills.html">Skills</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-intro">
+    <div class="container">
+      <p class="crumb">aliyu.dev/portfolio/the-daily-grind</p>
+      <h1>The Daily Grind</h1>
+      <p class="lede">A coffee-shop order ticket that doubles as a home-barista survey form.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>The brief</h2>
+      <p>Build a survey form covering a handful of standard input types — text, email, number, a dropdown, radio buttons, checkboxes, and a textarea — that still passes HTML5 validation. The catch: don't make it look like a generic form.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>The approach</h2>
+      <p>Instead of a plain feedback form, I built it as a "Home Barista Survey" styled like a coffee shop order ticket. The theme gave every field an actual reason to exist — cups per day as the number input, brew method as the radio group, gear owned as checkboxes — instead of arbitrary placeholder questions.</p>
+      <p>The visual details followed the same logic: a perforated tear-line at the top and bottom of the ticket, a rotated rubber-stamp badge, and a monospace receipt-style type pairing, so the page reads like an actual object rather than a stretched-out form.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Highlights</h2>
+      <ul>
+        <li>HTML5 validation on the email and number fields, including a min/max range on the number input.</li>
+        <li>A CSS-only perforated edge effect using a repeating radial gradient, no images involved.</li>
+        <li>Custom <code>accent-color</code> on radio buttons and checkboxes to match the ticket's accent without extra markup.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="container btn-row">
+    <a href="#" class="btn btn-primary">View live project</a>
+    <a href="portfolio.html" class="btn btn-ghost">Back to portfolio</a>
+  </div>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2>Have a project in mind?</h2>
+      <a href="contact.html" class="btn btn-primary">Start a conversation</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; 2026 Aliyu — built with HTML &amp; CSS, no frameworks.</p>
+    <div class="social-links">
+      <a href="https://github.com/aliyusabiugarba-bit" target="_blank" rel="noopener noreferrer">GitHub</a>      
+      <a href="mailto:you@example.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
