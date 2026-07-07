@@ -1,0 +1,327 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halcyon — A Turntable Worth Keeping</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="header">
+  <nav id="nav-bar">
+      <div class="brand">
+            <img id="header-img" src="https://freesvg.org/img/1536281106.png" alt="Halcyon logo">
+                  <span>Halcyon</span>
+                      </div>
+                          <div class="links">
+                                <a class="nav-link" href="#features">Features</a>
+                                      <a class="nav-link" href="#video-section">Listen</a>
+                                            <a class="nav-link" href="#pricing">Pricing</a>
+                                                  <a class="nav-link" href="#signup">Get One</a>
+                                                      </div>
+                                                        </nav>
+                                                        </header>
+
+                                                        <main>
+
+                                                          <section class="hero">
+                                                              <img class="hero-art" src="https://freesvg.org/img/1536281106.png" alt="" aria-hidden="true">
+                                                                  <h1>Halcyon</h1>
+                                                                      <p class="tagline">A turntable built for people who still want to hear the needle drop.</p>
+                                                                          <a class="cta" href="#signup">Reserve yours — $249</a>
+                                                                            </section>
+
+                                                                              <section class="main-block" id="features">
+                                                                                  <h2>Why Halcyon</h2>
+                                                                                      <div class="feature-grid">
+                                                                                            <div class="feature">
+                                                                                                    <h3>Steady speed</h3>
+                                                                                                            <p>A belt-drive motor keeps 33⅓ and 45 RPM locked in, record after record.</p>
+                                                                                                                  </div>
+                                                                                                                        <div class="feature">
+                                                                                                                                <h3>Built-in preamp</h3>
+                                                                                                                                        <p>Plug straight into any speaker or amp — no extra gear required.</p>
+                                                                                                                                              </div>
+                                                                                                                                                    <div class="feature">
+                                                                                                                                                            <h3>Bluetooth out</h3>
+                                                                                                                                                                    <p>Stream to wireless headphones when the room needs to stay quiet.</p>
+                                                                                                                                                                          </div>
+                                                                                                                                                                              </div>
+                                                                                                                                                                                </section>
+
+                                                                                                                                                                                  <section class="main-block" id="video-section">
+                                                                                                                                                                                      <h2>How Vinyl Actually Works</h2>
+                                                                                                                                                                                          <p>A quick look at what's happening in the groove every time the needle drops.</p>
+                                                                                                                                                                                              <div class="video-wrap">
+                                                                                                                                                                                                    <iframe id="video" src="https://www.youtube.com/embed/3cyphJLljAM" title="How a turntable works" allowfullscreen></iframe>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                          </section>
+
+                                                                                                                                                                                                            <section class="main-block" id="pricing">
+                                                                                                                                                                                                                <h2>One Price, Everything Included</h2>
+                                                                                                                                                                                                                    <p class="price">$249</p>
+                                                                                                                                                                                                                        <p>Turntable, preamp, dust cover, and a spare stylus — nothing else to buy.</p>
+                                                                                                                                                                                                                            <a class="cta" href="#signup">Reserve yours</a>
+                                                                                                                                                                                                                              </section>
+
+                                                                                                                                                                                                                                <section class="main-block" id="signup">
+                                                                                                                                                                                                                                    <h2>Be First in Line</h2>
+                                                                                                                                                                                                                                        <p>Leave your email and we'll let you know the moment Halcyon ships.</p>
+                                                                                                                                                                                                                                            <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                                                                                                                                                                                                                                                  <input id="email" type="email" name="email" placeholder="you@example.com" required>
+                                                                                                                                                                                                                                                        <input id="submit" type="submit" value="Notify Me">
+                                                                                                                                                                                                                                                            </form>
+                                                                                                                                                                                                                                                              </section>
+
+                                                                                                                                                                                                                                                              </main>
+
+                                                                                                                                                                                                                                                              <footer>
+                                                                                                                                                                                                                                                                <p>&copy; 2026 Halcyon Audio. Built for people who like things that spin.</p>
+                                                                                                                                                                                                                                                                </footer>
+
+                                                                                                                                                                                                                                                                </body>
+                                                                                                                                                                                                                                                                </html>
+
+** end of index.html **
+
+** start of styles.css **
+
+:root {
+    --bg: #15102a;
+      --panel: #1f1840;
+        --line: #342a5c;
+          --ink: #f3eefe;
+            --ink-soft: #c3b8e6;
+              --accent: #f2a73b;
+                --nav-h: 64px;
+                }
+
+                * { box-sizing: border-box; }
+
+                body {
+                  margin: 0;
+                    background: var(--bg);
+                      color: var(--ink);
+                        font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+                          padding-top: var(--nav-h);
+                          }
+
+                          h1, h2, h3 {
+                            font-family: Georgia, "Times New Roman", serif;
+                              margin: 0 0 0.6rem;
+                              }
+
+                              a { color: inherit; }
+
+                              /* ---------- nav ---------- */
+
+                              #nav-bar {
+                                position: fixed;
+                                  top: 0;
+                                    left: 0;
+                                      width: 100%;
+                                        height: var(--nav-h);
+                                          background: var(--panel);
+                                            border-bottom: 1px solid var(--line);
+                                              display: flex;
+                                                align-items: center;
+                                                  justify-content: space-between;
+                                                    padding: 0 5vw;
+                                                      z-index: 10;
+                                                      }
+
+                                                      .brand {
+                                                        display: flex;
+                                                          align-items: center;
+                                                            gap: 0.5rem;
+                                                              font-weight: 700;
+                                                                font-size: 1.1rem;
+                                                                }
+
+                                                                .brand img {
+                                                                  width: 28px;
+                                                                    height: 28px;
+                                                                    }
+
+                                                                    .links {
+                                                                      display: flex;
+                                                                        gap: 1.4rem;
+                                                                        }
+
+                                                                        .nav-link {
+                                                                          text-decoration: none;
+                                                                            color: var(--ink-soft);
+                                                                              font-size: 0.92rem;
+                                                                              }
+
+                                                                              .nav-link:hover,
+                                                                              .nav-link:focus-visible {
+                                                                                color: var(--accent);
+                                                                                }
+
+                                                                                /* ---------- hero ---------- */
+
+                                                                                .hero {
+                                                                                  position: relative;
+                                                                                    text-align: center;
+                                                                                      padding: 4.5rem 6vw 4rem;
+                                                                                        overflow: hidden;
+                                                                                        }
+
+                                                                                        .hero-art {
+                                                                                          position: absolute;
+                                                                                            top: 50%;
+                                                                                              left: 50%;
+                                                                                                width: 360px;
+                                                                                                  height: 360px;
+                                                                                                    transform: translate(-50%, -50%);
+                                                                                                      opacity: 0.07;
+                                                                                                        pointer-events: none;
+                                                                                                        }
+
+                                                                                                        .hero h1 {
+                                                                                                          position: relative;
+                                                                                                            font-size: clamp(2.4rem, 8vw, 3.6rem);
+                                                                                                            }
+
+                                                                                                            .hero .tagline {
+                                                                                                              position: relative;
+                                                                                                                max-width: 36ch;
+                                                                                                                  margin: 0 auto 1.8rem;
+                                                                                                                    color: var(--ink-soft);
+                                                                                                                      font-size: 1.1rem;
+                                                                                                                        line-height: 1.5;
+                                                                                                                        }
+
+                                                                                                                        .cta {
+                                                                                                                          position: relative;
+                                                                                                                            display: inline-block;
+                                                                                                                              background: var(--accent);
+                                                                                                                                color: #1a1326;
+                                                                                                                                  font-weight: 700;
+                                                                                                                                    text-decoration: none;
+                                                                                                                                      padding: 0.8rem 1.6rem;
+                                                                                                                                        border-radius: 999px;
+                                                                                                                                        }
+
+                                                                                                                                        .cta:hover { opacity: 0.9; }
+
+                                                                                                                                        /* ---------- sections ---------- */
+
+                                                                                                                                        .main-block {
+                                                                                                                                          max-width: 760px;
+                                                                                                                                            margin: 0 auto;
+                                                                                                                                              padding: 3.5rem 6vw;
+                                                                                                                                                text-align: center;
+                                                                                                                                                }
+
+                                                                                                                                                .main-block p {
+                                                                                                                                                  color: var(--ink-soft);
+                                                                                                                                                    line-height: 1.6;
+                                                                                                                                                    }
+
+                                                                                                                                                    .feature-grid {
+                                                                                                                                                      display: flex;
+                                                                                                                                                        flex-wrap: wrap;
+                                                                                                                                                          gap: 1.5rem;
+                                                                                                                                                            justify-content: center;
+                                                                                                                                                              margin-top: 2rem;
+                                                                                                                                                              }
+
+                                                                                                                                                              .feature {
+                                                                                                                                                                flex: 1 1 200px;
+                                                                                                                                                                  background: var(--panel);
+                                                                                                                                                                    border: 1px solid var(--line);
+                                                                                                                                                                      border-radius: 6px;
+                                                                                                                                                                        padding: 1.4rem;
+                                                                                                                                                                        }
+
+                                                                                                                                                                        .video-wrap {
+                                                                                                                                                                          position: relative;
+                                                                                                                                                                            width: 100%;
+                                                                                                                                                                              aspect-ratio: 16 / 9;
+                                                                                                                                                                                margin-top: 1.5rem;
+                                                                                                                                                                                  border-radius: 6px;
+                                                                                                                                                                                    overflow: hidden;
+                                                                                                                                                                                      border: 1px solid var(--line);
+                                                                                                                                                                                      }
+
+                                                                                                                                                                                      .video-wrap iframe {
+                                                                                                                                                                                        width: 100%;
+                                                                                                                                                                                          height: 100%;
+                                                                                                                                                                                            border: 0;
+                                                                                                                                                                                              display: block;
+                                                                                                                                                                                              }
+
+                                                                                                                                                                                              .price {
+                                                                                                                                                                                                font-family: Georgia, serif;
+                                                                                                                                                                                                  font-size: 3rem;
+                                                                                                                                                                                                    color: var(--accent);
+                                                                                                                                                                                                      margin: 0.5rem 0;
+                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                      #signup form {
+                                                                                                                                                                                                        display: flex;
+                                                                                                                                                                                                          gap: 0.6rem;
+                                                                                                                                                                                                            justify-content: center;
+                                                                                                                                                                                                              margin-top: 1.5rem;
+                                                                                                                                                                                                                flex-wrap: wrap;
+                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                #email {
+                                                                                                                                                                                                                  flex: 1 1 260px;
+                                                                                                                                                                                                                    padding: 0.75rem 1rem;
+                                                                                                                                                                                                                      border-radius: 4px;
+                                                                                                                                                                                                                        border: 1px solid var(--line);
+                                                                                                                                                                                                                          background: var(--panel);
+                                                                                                                                                                                                                            color: var(--ink);
+                                                                                                                                                                                                                              font-size: 1rem;
+                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                              #email::placeholder { color: var(--ink-soft); }
+
+                                                                                                                                                                                                                              #submit {
+                                                                                                                                                                                                                                background: var(--accent);
+                                                                                                                                                                                                                                  color: #1a1326;
+                                                                                                                                                                                                                                    font-weight: 700;
+                                                                                                                                                                                                                                      border: none;
+                                                                                                                                                                                                                                        border-radius: 4px;
+                                                                                                                                                                                                                                          padding: 0.75rem 1.3rem;
+                                                                                                                                                                                                                                            cursor: pointer;
+                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                            footer {
+                                                                                                                                                                                                                                              text-align: center;
+                                                                                                                                                                                                                                                padding: 2rem 6vw 3rem;
+                                                                                                                                                                                                                                                  color: var(--ink-soft);
+                                                                                                                                                                                                                                                    font-size: 0.85rem;
+                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                    /* ---------- responsiveness ---------- */
+
+                                                                                                                                                                                                                                                    @media (max-width: 640px) {
+                                                                                                                                                                                                                                                      .links {
+                                                                                                                                                                                                                                                          gap: 0.8rem;
+                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                              .nav-link {
+                                                                                                                                                                                                                                                                  font-size: 0.82rem;
+                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                      .hero {
+                                                                                                                                                                                                                                                                          padding: 3.5rem 6vw 3rem;
+                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                              #signup form {
+                                                                                                                                                                                                                                                                                  flex-direction: column;
+                                                                                                                                                                                                                                                                                      align-items: stretch;
+                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                        
+}
+
+** end of styles.css **
+
