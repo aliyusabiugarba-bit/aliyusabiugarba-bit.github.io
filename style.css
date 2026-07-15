@@ -590,6 +590,28 @@ code {
 
 .contact-details .social-links { margin-top: 1rem; }
 
+/* ---------- entertainment page ---------- */
+
+.entertainment-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.media-item {
+  width: 100%;
+}
+
+.media-item iframe,
+.media-item video {
+  display: block;
+  border-radius: var(--radius);
+}
+
+.media-item audio {
+  width: 100%;
+}
+
 /* ---------- responsiveness ---------- */
 
 @media (max-width: 880px) {
